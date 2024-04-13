@@ -1,0 +1,126 @@
+.kakao {
+  background-color: #f7e111;
+  width: 400px;
+
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+
+  border-radius: 10px;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.facebook {
+  background-color: #0863f7;
+  width: 400px;
+
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+
+  border-radius: 10px;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.apple {
+  /* 자식의 배치도 css */
+  display: flex;
+  /* 가운데로 맞춰줘 */
+  justify-content: center;
+  /* 자식들의 간격을 10px */
+  gap: 10px;
+
+  background-color: white;
+  width: 400px;
+
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  /* 선 두께, 선 스타일 , 색깔 */
+  border: 1px solid #dbdbdb;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.icon {
+  display: flex;
+  /* 가운데로 맞춰줘 */
+  align-items: center;
+  /* 사과 사이즈 */
+  font-size: 30px;
+}
+
+.apple_button {
+  /* 자식의 배치도 css */
+  display: flex;
+  /* 사과모양 양 옆을 가운데로 맞춰줘 */
+  justify-content: center;
+  /* 사과모양 위,아래를 가운데로 맞춰줘 */
+  align-items: center;
+
+  /* 사과 사이즈, 색깔 */
+  font-size: 30px;
+  color: white;
+
+  /* 배경 크기,색깔,모양 */
+  width: 80px;
+  height: 80px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.email_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 30px;
+  color: white;
+
+  width: 80px;
+  height: 80px;
+  background-color: rgb(135, 206, 235);
+  border-radius: 50%;
+}
+
+.button {
+  /* 중복되는 코드 합치기 */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+
+  font-size: 30px;
+}
+
+.icon1 {
+  /* 중복 안되는 코드 */
+  background-color: black;
+  color: white;
+}
+
+.icon2 {
+  /* 중복 안되는 코드 */
+  background-color: rgb(135, 206, 235);
+  color: white;
+}
+
+.naver {
+  /* 이미지 로고 과한 설정은 따로 해야 함*/
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
