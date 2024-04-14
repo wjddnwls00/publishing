@@ -1,0 +1,238 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.all1 {
+  display: flex;
+  /* width: 100%;
+  height: 100%;*/
+
+  /* 자식들이 균등학게 자리 차지하는  CSS */
+  flex: 1 1 auto;
+}
+.all2 {
+  display: flex;
+  /* width: 100%;
+  height: 100%;*/
+
+  /* 자식들이 균등학게 자리 차지하는  CSS */
+  flex: 1 1 auto;
+}
+
+.all3 {
+  display: flex;
+  /* width: 100%;
+  height: 100%;*/
+
+  /* 자식들이 균등학게 자리 차지하는  CSS */
+  flex: 1 1 auto;
+}
+
+.all4 {
+  display: flex;
+  /* width: 100%;
+  height: 100%;*/
+
+  /* 자식들이 균등학게 자리 차지하는  CSS */
+  flex: 1 1 auto;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+}
+
+.a {
+  background-color: #fc5c65;
+}
+.b {
+  background-color: #fd9644;
+}
+.c {
+  background-color: #fed330;
+}
+.d {
+  background-color: #26de81;
+}
+.e {
+  background-color: #2bcbba;
+}
+.f {
+  background-color: #eb3b5a;
+}
+.g {
+  background-color: #fa8231;
+}
+.h {
+  background-color: #4b6584;
+}
+.i {
+  background-color: #f7b731;
+}
+
+.j {
+  background-color: #20bf6b;
+}
+.k {
+  background-color: #0fb9b1;
+}
+.l {
+  background-color: #45aaf2;
+}
+.m {
+  background-color: #4b7bec;
+}
+.n {
+  background-color: #a55eea;
+}
+.o {
+  background-color: #d1d8e0;
+}
+.p {
+  background-color: #778ca3;
+}
+.q {
+  background-color: #2d98da;
+}
+.r {
+  background-color: #3867d6;
+}
+.s {
+  background-color: #8854d0;
+}
+.t {
+  background-color: #a5b1c2;
+}

@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vw;
+  width: 100vw;
+  gap: 10px;
+}
+
+.button {
+  width: 140px;
+  /* height는 밑으로 더 늘리는 거라 글씨가 가운데로 안맞춰짐. */
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  border-radius: 100px;
+
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+
+  /* padding으로 텍스트와 도형 비율 맞추기 */
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  /* padding 축약버전: 위 오른쪽 밑 왼쪽 시계방향 */
+  /* padding:10px 16px 10px 16px */
+
+  /* 마우스 올렸을때 커서 바뀌는 CSS */
+  cursor: pointer;
+}
+
+.a {
+  width: 80px;
+  background-color: blue;
+  color: white;
+}
+
+.b {
+  width: 80px;
+}
