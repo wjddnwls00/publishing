@@ -1,0 +1,73 @@
+/*폰트 바꾸기*/
+@font-face {
+  font-family: "JalnanGothic";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.contain {
+  height: 380px;
+  width: 280px;
+  border-radius: 12px;
+
+  /*박스의 배경 크기만큼 사진의 크기를 맞춘다*/
+  background-size: cover;
+
+  /* 동서남북 padding*/
+  padding: 20px;
+  filter: brightness(1.07);
+  /*마우스 올렸을 때 변화하는 속도가 0.5초 느려짐*/
+  transition: all 0.5s ease 1s;
+}
+/*마우스를 올렸을 때 적용되는 css*/
+.contain:hover {
+  filter: brightness(0.8);
+}
+
+.a {
+  background-image: url(image1.jpg);
+}
+
+.b {
+  background-image: url(image2.jpg);
+}
+
+.c {
+  background-image: url(image3.jpg);
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  gap: 10px;
+}
+
+.category {
+  font-family: "JalnanGothic";
+  font-size: 15px;
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+  /*너비를 글자크기에 맞춘다*/
+  width: fit-content;
+}
+
+.title {
+  font-family: "JalnanGothic";
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.des {
+  font-family: "JalnanGothic";
+  font-size: 15px;
+}

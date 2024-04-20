@@ -1,0 +1,59 @@
+body {
+  height: 300vw;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.up {
+  display: flex;
+}
+
+.down {
+  display: flex;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+}
+
+.green {
+  background-color: green;
+}
+.green > span {
+  /*자기 자신 위치를 기준으로 위치 옮기기*/
+  position: relative;
+  left: 10px;
+  top: 10px;
+}
+.blue {
+  background-color: blue;
+}
+
+.blue > span {
+  /*웹 페이지 전체를 기준으로 위치 옮기기*/
+  position: absolute;
+  left: 30px;
+  top: 30px;
+}
+.orange {
+  background-color: orange;
+}
+.orange > span {
+  /*position: static; 디폴트값*/
+  /*따라 움직임*/
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+.purple {
+  background-color: purple;
+}
+.purple > span {
+  position: sticky;
+  top: 100px;
+  left: 0px;
+}

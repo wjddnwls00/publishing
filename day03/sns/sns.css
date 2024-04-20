@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "Freesentation-9Black";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-9Black.woff2")
+    format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SUITE-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.contain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+  flex-direction: column;
+  height: 500px;
+  width: 280px;
+
+  border-radius: 30px;
+  font-family: "Freesentation-9Black";
+
+  gap: 10px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+/* div user클래스안에 img 태그 사용하는법
+.user > img  */
+.userimage {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+.userimage:hover {
+  filter: brightness(0.7);
+}
+
+.userinformation {
+  font-family: "Freesentation-9Black";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.username {
+  font-size: 25px;
+  color: white;
+}
+
+.userjob {
+  color: white;
+  font-family: "SUITE-Regular";
+  font-size: 15px;
+}
+
+.category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  background-color: white;
+
+  transition: all 0.5s;
+  height: 40px;
+  width: 230px;
+}
+.category:hover {
+  background-color: khaki;
+}
+
+.contain1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  height: 30px;
+  width: 230px;
+
+  font-size: 20px;
+  gap: 15px;
+}
+
+.image {
+  transition: all 0.5s;
+}
+
+.image:hover {
+  filter: brightness(0.8);
+  color: skyblue;
+}
