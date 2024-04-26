@@ -1,0 +1,25 @@
+.container{
+    width: 500px;
+    height: 300px;
+    gap: 20px;
+
+    overflow: scroll;
+
+}
+/* 스크롤 바 없애기 */
+.container::-webkit-scrollbar{
+    display: none;
+}
+
+/* 컨테이너에 오버플로우를 적용시켜서 box를 가로로 보여주려면 wrapper 한번 더 감싸야 함 */
+.wrapper{
+    display: flex;
+    width: 700px;
+    height: 100%;
+}
+
+.box{
+    width: 200px;
+    height: 100%;
+    border: 1px solid black;
+}

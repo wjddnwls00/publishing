@@ -1,0 +1,47 @@
+.contain{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: ghostwhite;
+
+    width:280px;
+    height:450px;
+
+    gap:20px;
+    transition: all 0.5s ease;
+}
+
+.box:hover{
+    filter: brightness(0.7);
+
+}
+
+.coffee{
+    width: 100%;
+}
+/* coffee 태그 안에 img(사진) 크기 조절하기 */
+.coffee>img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.name{
+    font-size: 13px;
+}
+
+.text{
+    color: white;
+    font-size: 10px;
+    background-color: darkblue;
+    padding: 3px 5px 3px 5px;
+    
+}

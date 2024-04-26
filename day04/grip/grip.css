@@ -1,0 +1,42 @@
+.contain{
+    width: 500px;
+    height: 200px;
+    gap: 20px;
+    overflow: scroll;
+    background-color: black;
+}
+
+.contain::-webkit-scrollbar{
+    display: none;
+}
+
+.wrapper{
+    display: flex;
+    width: 700px;
+    height: 100%;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    width: 140px;
+    height: 200px;
+    gap:10px;
+}
+
+.image{
+    width: 100px;
+    height:100px;
+    background-size: cover;
+    background-image: url(girp.jpeg);
+    border-radius: 100%;
+}
+
+.name{
+    color: gray;
+}
+
+

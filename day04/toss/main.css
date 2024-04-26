@@ -1,0 +1,114 @@
+@font-face {
+  font-family: 'KCC-Hanbit';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/KCC-Hanbit.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.main{
+  overflow-y: scroll;
+}
+
+.first {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("main_toss.png");
+    /* background 사진을 size에 맞춘다 */
+    background-size: cover;
+    /* background 사진의 중심을 가운데로 맞춘다 */
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    gap: 20px;
+  }
+
+  .first>span{
+    font-family: 'KCC-Hanbit';
+    font-size: 50px;
+    font-weight: 700;
+    color: rgb(25, 31, 40);
+  }
+  
+  .store
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+  }
+
+  .appstore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:fit-content;
+    height:40px;
+    background-color: rgb(0 12 30 / 80%);
+    border-radius: 7px;
+
+    padding: 2px 5px 1px 1px;
+  }
+
+  .appstore>img{
+    
+    color: gray;
+    width: 30px;
+    height: 30px;
+  }
+
+  .appstore>span{
+    font-family: 'KCC-Hanbit';
+    font-size: 18px;
+    color: white;
+  }
+
+  .googleplay{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:fit-content;
+    height:40px;
+    background-color: rgb(0 12 30 / 80%);
+    border-radius: 7px;
+
+    padding: 2px 5px 1px 1px;
+  }
+
+
+  .googleplay>img{
+    width: 30px;
+    height: 30px;
+  }
+
+  .googleplay>span{
+    font-family: 'KCC-Hanbit';
+    font-size: 18px;
+    color: white;
+  }
+
+  .box{
+    height: 450px;
+  }
+
+  .second{
+    width: 100vw;
+    height: 100vh;
+    background-color: #f5f5f5;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .second>span{
+    font-weight: bold;
+    font-size: 30px;
+  }
