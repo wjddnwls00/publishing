@@ -1,0 +1,18 @@
+.container {
+  /* 자식의 배치를 바둑판 모양으로 */
+  display: grid;
+  width: fit-content;
+
+  /* fr:조각 , 2열로 만들기 */
+  grid-template-columns: 1fr 1fr;
+  /* 같은 의미임
+  grid-template-columns: repeat(2, 1fr);*/
+  grid-gap: 10px;
+}
+
+.box {
+  border: 1px solid black;
+  background-color: skyblue;
+  width: 100px;
+  height: 100px;
+}
