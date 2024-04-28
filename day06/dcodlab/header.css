@@ -1,0 +1,59 @@
+header {
+  width: 100vw;
+  height: 61px;
+  /* 위에 위치시키기  여기선 의미없음????
+  top: 0;
+  z-index: 1;
+  */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: white;
+}
+
+nav {
+  width: 100%;
+  max-width: 1180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > a {
+  text-decoration: none;
+  display: flex;
+  justify-content: flex;
+  align-items: center;
+}
+
+nav > a > span {
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 172px;
+  height: 55px;
+
+  color: black;
+  font-size: 15px;
+  transition: all 0.5s;
+}
+
+.menu:hover {
+  background-color: gray;
+  color: white;
+}

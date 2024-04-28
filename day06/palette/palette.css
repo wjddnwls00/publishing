@@ -1,0 +1,68 @@
+.container {
+  display: grid;
+  width: fit-content;
+
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+}
+
+.a {
+  background-image: url(image1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.b {
+  background-image: url(image3.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.c {
+  background-color: yellow;
+}
+
+.d {
+  background-color: green;
+}
+.e {
+  background-color: skyblue;
+}
+
+.f {
+  background-color: blue;
+}
+
+.g {
+  background-color: purple;
+}
+
+.h {
+  background-color: black;
+}
+
+/* 1024 이하면 이거 적용 */
+@media screen and (max-width: 1024px) {
+  body {
+    .container {
+      display: grid;
+      width: fit-content;
+
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+/* 768 이하면 이거 적용 */
+@media screen and (max-width: 768px) {
+  body {
+    .container {
+      display: grid;
+      width: fit-content;
+
+      grid-template-columns: 1fr;
+    }
+  }
+}

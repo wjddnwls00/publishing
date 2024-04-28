@@ -1,0 +1,152 @@
+.first {
+  width: 100vw;
+  height: 100vh;
+
+  /* 이걸 안해주면 배경이 다 가림 */
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.first > video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.75);
+  opacity: 0.9;
+}
+
+.first > .box {
+  width: 100%;
+  max-width: 1180px;
+  height: 100%;
+
+  /* 비디오 배경 위에다가 포지션 잡아줌  */
+  position: absolute;
+
+  /* absolute 적용시키기위해서 left, right 꼭 주기 */
+  /* absolute에서 jutify-content 하는 거 같음 */
+  top: 0;
+  left: 0;
+  right: 0;
+  /* 가운데로 오게하기 */
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+}
+
+.a {
+  font-size: 120px;
+  font-weight: bold;
+}
+.b {
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
+.box > button {
+  width: 400px;
+  height: 30px;
+}
+
+.second {
+  width: 100vw;
+  height: 60vh;
+  background-color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.second > .container {
+  width: 100%;
+  max-width: 1180px;
+  height: fit-content;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.second > .container > .news {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 24px;
+  color: gray;
+  font-weight: bold;
+}
+
+.second > .container > .box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.contents {
+  width: 280px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contents > .image {
+  width: 280px;
+  height: 120px;
+}
+
+.image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contents > .title {
+  font-weight: bold;
+}
+
+/* CSS */
+.button-39 {
+  width: 400px;
+  height: 30px;
+  background-color: #555;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  color: #111827;
+  font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, system-ui,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  text-align: center;
+  text-decoration: none #d1d5db solid;
+  text-decoration-thickness: auto;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-39:hover {
+  background-color: rgb(249, 250, 251);
+}
+
+.button-39:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.button-39:focus-visible {
+  box-shadow: none;
+}
