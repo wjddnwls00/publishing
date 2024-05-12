@@ -1,0 +1,70 @@
+.vision {
+  width: 100vw;
+}
+
+.vision--cardLayout {
+  width: 100%;
+  max-width: var(--maxwidth--desktop);
+  margin: 0 auto;
+  height: 856px;
+
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.vision--cardLayout--box {
+  border-radius: 0.75rem;
+  /* rem 은 px과 비슷한 개념 */
+  box-shadow: rgba(0, 0, 0, 0.08) 0rem 0.25rem 3rem;
+  /* x축 y축으로 포지션 맞춤  50% 50%(정가운데) */
+  background-position: 50% 50%;
+  background-size: cover;
+  padding: 24px;
+}
+
+/* 여러개 각각의 박스에 굳이 클래스명을 안붙이고 하는 방법 */
+.vision--cardLayout > div:nth-child(1) {
+  grid-area: 1 / 1 / 4 / 4;
+  background-image: url(https://ably.team/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fably-team%2Fd5aa5e7c-ddc9-40eb-8a6e-763d4d7a4de5_MAU%2B700%25E1%2584%2586%25E1%2585%25A1%25E1%2586%25AB.png%3Fauto%3Dcompress%2Cformat%26rect%3D0%2C0%2C2497%2C3201%26w%3D624%26h%3D800&w=1080&q=75);
+}
+.vision--cardLayout > div:nth-child(2) {
+  grid-area: 1 / 4 / 4 / 11;
+  background-image: url(https://ably.team/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fably-team%2Fe7b638da-ae48-40b7-979c-115b9a4b3e62_%25E1%2584%2582%25E1%2585%25AE%25E1%2584%258C%25E1%2585%25A5%25E1%2586%25A8%2B%25E1%2584%2583%25E1%2585%25AE%25E1%2584%258C%25E1%2585%25A1%25E1%2584%2580%25E1%2585%25B3%25E1%2586%25B7%25E1%2584%258B%25E1%2585%25A2%25E1%2586%25A8%2B1730%25E1%2584%258B%25E1%2585%25A5%25E1%2586%25A8.png%3Fauto%3Dcompress%2Cformat%26rect%3D0%2C0%2C2497%2C3201%26w%3D624%26h%3D800&w=1080&q=75);
+}
+.vision--cardLayout > div:nth-child(3) {
+  grid-area: 4 / 1 / 8 / 7;
+  background-image: url(https://ably.team/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fably-team%2Ff901528c-9b7f-498d-a315-146f80316d89_image%2B%25285%2529.png%3Fauto%3Dcompress%2Cformat%26rect%3D0%2C0%2C2497%2C3201%26w%3D624%26h%3D800&w=1080&q=75);
+}
+.vision--cardLayout > div:nth-child(4) {
+  grid-area: 8 / 1 / 11 / 7;
+  background-image: url(https://ably.team/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fably-team%2F0ab0393a-10f4-45d8-af13-978f70485f6c_%25E1%2584%2582%25E1%2585%25AE%25E1%2584%258C%25E1%2585%25A5%25E1%2586%25A8%2B%25E1%2584%2580%25E1%2585%25A5%25E1%2584%2585%25E1%2585%25A2%25E1%2584%258B%25E1%2585%25A2%25E1%2586%25A8%2B1%25E1%2584%258C%25E1%2585%25A9%25E1%2584%258B%25E1%2585%25AF%25E1%2586%25AB.png%3Fauto%3Dcompress%2Cformat%26rect%3D0%2C0%2C2497%2C3201%26w%3D624%26h%3D800&w=1080&q=75);
+}
+.vision--cardLayout > div:nth-child(5) {
+  grid-area: 4 / 7 / 11 / 11;
+  background-image: url(https://ably.team/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fably-team%2F7d9a40ce-b0de-4877-bc4e-c22e8b39e205_%25E1%2584%2582%25E1%2585%25AE%25E1%2584%258C%25E1%2585%25A5%25E1%2586%25A8%2B%25E1%2584%2585%25E1%2585%25B5%25E1%2584%2587%25E1%2585%25B2%25E1%2584%2589%25E1%2585%25AE%2B3500%25E1%2584%2586%25E1%2585%25A1%25E1%2586%25AB%25E1%2584%2580%25E1%2585%25A2.png%3Fauto%3Dcompress%2Cformat%26rect%3D0%2C0%2C2497%2C3201%26w%3D624%26h%3D800&w=1080&q=75);
+}
+
+.vision--cardLayout--box--title {
+  font-size: var(--font--size--large);
+}
+.vision--cardLayout--box--title > .special {
+  font-size: 15px;
+}
+
+/* 모바일 버전 */
+@media screen and (max-width: 768px) {
+  body {
+    .vision--cardLayout {
+      max-width: 410px;
+      display: flex;
+      flex-direction: column;
+      height: auto;
+    }
+    .vision--cardLayout--box {
+      height: 400px;
+    }
+  }
+}
