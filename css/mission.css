@@ -1,0 +1,93 @@
+.mission {
+  width: 100vw;
+  padding: 120px 0;
+}
+
+.mission > .mission--container {
+  width: 100%;
+  max-width: var(--maxWidth--desktop);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mission--container--textLayout > h6 {
+  font-size: var(--font--size--small);
+  color: var(--gray500);
+}
+.mission--container--textLayout > h2 {
+  font-size: var(--font--size--large);
+  margin-top: 10px;
+}
+
+.mission--container--cardLayout {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+.mission--container--cardLayout--card {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  border-radius: var(--borderRadius--medium);
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mission--container--cardLayout--card > .mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--borderRadius--medium);
+  background: linear-gradient(0deg, rgba(58, 0, 0, 0.4), rgba(58, 0, 0, 0.4));
+}
+
+.mission--container--cardLayout--card--contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  gap: 10px;
+  color: var(--white);
+  position: absolute;
+  bottom: 64px;
+}
+
+.mission--container--cardLayout--card--contents > h6 {
+  font-size: var(--font--size--small);
+}
+
+.mission--container--cardLayout--card--contents > h4 {
+  font-size: var(--font--size--large);
+}
+
+.mission--container--cardLayout--card--contents > .button {
+  padding: var(--padding--button);
+  background-color: var(--white);
+  color: var(--gray500);
+  border-radius: var(--borderRadius--medium);
+}
+
+.mission--container--cardLayout--card:nth-child(1) {
+  background-image: url("../image/mission/first.webp");
+}
+.mission--container--cardLayout--card:nth-child(2) {
+  background-image: url("../image/mission/second.webp");
+}
+
+@media screen and (max-width: 768px) {
+  .mission > .mission--container {
+    max-width: var(--maxWidth--mobile);
+  }
+
+  .mission--container--cardLayout {
+    flex-direction: column;
+  }
+  .mission--container--cardLayout--card--contents > h6 {
+    font-size: var(--font--size--small);
+  }
+}

@@ -1,0 +1,34 @@
+.identity {
+  width: 100vw;
+  padding: 120px 0;
+}
+
+.identity > .identity--jumbotron {
+  width: 100%;
+  max-width: var(--maxWidth--desktop);
+  margin: 0 auto;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: var(--font--size--large);
+  color: var(--gray500);
+}
+
+.identity--jumbotron__hasMarginTop {
+  margin-top: 30px;
+}
+.identity--jumbotron__highlight {
+  color: var(--gray900);
+}
+
+@media screen and (max-width: 768px) {
+  .identity > .identity--jumbotron {
+    max-width: var(--maxWidth--mobile);
+    font-size: var(--font--size--medium);
+    word-break: keep-all;
+  }
+}
